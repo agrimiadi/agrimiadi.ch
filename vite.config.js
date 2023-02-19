@@ -26,6 +26,6 @@ export default defineConfig({
     commonjsOptions: {
       transformMixedEsModules: true,
     },
-    outDir: path.join(__dirname, "docs"),
   },
+  // base: "/agrimiadi.ch/",
 });

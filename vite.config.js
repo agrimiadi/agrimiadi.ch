@@ -27,5 +27,5 @@ export default defineConfig({
       transformMixedEsModules: true,
     },
   },
-  base: "/agrimiadi.ch/",
+  // base: "/agrimiadi.ch/",
 });

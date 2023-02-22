@@ -1,8 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Instagram from "../images/instagram.png";
+import Facebook from "../images/facebook.png";
+import Whatsapp from "../images/whatsapp.png";
+import Substack from "../images/substack.png";
 
 import Header from "../partials/Header";
-import Banner from "../partials/Banner";
 
 function Contact() {
   return (
@@ -26,10 +28,9 @@ function Contact() {
                 </h1>
                 <div className="max-w-3xl mx-auto">
                   <div className="text-lg text-left text-gray-600">
-                    Du findest uns in Braggio welches zum schönen Parco val
-                    Calanca gehört. Das kleine Dorf ist nur mit der Seilbahn von
-                    Arvigo aus zu erreichen. Wir wohnen an der Via Miadi 25
-                    welche ganz am nördlichen Ende des Dorfes liegt.
+                    Du findest uns in Braggio, welches zum schönen Parco Val
+                    Calanca gehört. Du erreichst das kleine Dorf nur per
+                    Seilbahn ab Arvigo.
                     <div className="pt-8">
                       Die genaue Adresse lautet: <br />
                       <br /> Sarah Hell & Curdin Barandun
@@ -39,21 +40,59 @@ function Contact() {
                       6544 Braggio
                       <br />
                     </div>
-                    <div className="pt-8">
-                      Telefonisch erreichst du uns unter{" "}
+                    <div className="pt-6">
                       <a className="underline" href="tel:079 756 71 81">
                         079 756 71 81
                       </a>
-                      , unsere Email Adresse lautet{" "}
+                      <br />
                       <a className="underline" href="mailto:info@agrimiadi.ch">
                         info@agrimiadi.ch
+                      </a>
+                    </div>
+                    <div className="pt-8 flex flex-grow flex-wrap items-center space-x-4">
+                      <a
+                        href="https://www.instagram.com/agri.miadi"
+                        target="_blank"
+                      >
+                        <img
+                          className="h-8 w-auto ml-2"
+                          src={Instagram}
+                          alt="Instagram"
+                        />
+                      </a>
+                      <a
+                        href="https://www.facebook.com/agrimiadi"
+                        target="_blank"
+                      >
+                        <img
+                          className="h-8 w-auto"
+                          src={Facebook}
+                          alt="Facebook"
+                        />
+                      </a>
+                      <a
+                        href="https://chat.whatsapp.com/FG8ccsdBPtYCortlZ5mKAf"
+                        target="_blank"
+                      >
+                        <img
+                          className="h-8 w-auto"
+                          src={Whatsapp}
+                          alt="Whatsapp"
+                        />
+                      </a>
+                      <a href="https://agrimiadi.substack.com/" target="_blank">
+                        <img
+                          className="h-8 w-auto"
+                          src={Substack}
+                          alt="Substack"
+                        />
                       </a>
                     </div>
                     <div className="pt-8">
                       <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d378.9071996146053!2d9.123700669923005!3d46.3075341509156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sch!4v1677068655123!5m2!1sen!2sch"
                         width="600"
-                        height="450"
+                        height="350"
                         style={{ border: 0 }}
                         allowFullScreen=""
                         loading="lazy"

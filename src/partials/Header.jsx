@@ -43,7 +43,7 @@ function Header() {
         !top && "bg-white backdrop-blur-sm shadow-lg"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-5 sm:px-6">
+      <div className="max-w-6xl mx-auto px-3 sm:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Site branding */}
           <div className="flex-shrink-0 mr-4">
@@ -64,7 +64,7 @@ function Header() {
 
           {/* Site navigation */}
           <nav className="flex flex-grow">
-            <ul className="flex flex-grow justify-end flex-wrap items-center space-x-4">
+            <ul className="flex flex-grow justify-end flex-wrap items-center space-x-2">
               {/* <li>
                 <Link
                   to="/signin"
@@ -81,17 +81,17 @@ function Header() {
                   DER HOF
                 </Link>
               </li>
-              <li>
+              <li className="hidden md:block">
                 <Link
-                  to="#products"
+                  to="/#products"
                   className="font-medium text-lg text-gray-600 hover:text-gray-900 px-3 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   PRODUKTE
                 </Link>
               </li>
-              <li>
+              <li className="hidden md:block">
                 <Link
-                  to="#story"
+                  to="/#story"
                   className="font-medium text-lg text-gray-600 hover:text-gray-900 px-3 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   UNSERE GESCHICHTE
@@ -108,7 +108,7 @@ function Header() {
               <li>
                 <a href="https://www.instagram.com/agri.miadi" target="_blank">
                   <img
-                    className="h-8 w-auto ml-5"
+                    className="h-6 w-auto ml-2"
                     src={Instagram}
                     alt="Instagram"
                   />
@@ -116,7 +116,7 @@ function Header() {
               </li>
               <li>
                 <a href="https://www.facebook.com/agrimiadi" target="_blank">
-                  <img className="h-8 w-auto" src={Facebook} alt="Facebook" />
+                  <img className="h-6 w-auto" src={Facebook} alt="Facebook" />
                 </a>
               </li>
               <li>
@@ -124,12 +124,12 @@ function Header() {
                   href="https://chat.whatsapp.com/FG8ccsdBPtYCortlZ5mKAf"
                   target="_blank"
                 >
-                  <img className="h-8 w-auto" src={Whatsapp} alt="Whatsapp" />
+                  <img className="h-6 w-auto" src={Whatsapp} alt="Whatsapp" />
                 </a>
               </li>
               <li>
                 <a href="https://agrimiadi.substack.com/" target="_blank">
-                  <img className="h-8 w-auto" src={Substack} alt="Substack" />
+                  <img className="h-6 w-auto" src={Substack} alt="Substack" />
                 </a>
               </li>
             </ul>

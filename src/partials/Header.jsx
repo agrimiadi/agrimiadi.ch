@@ -99,14 +99,14 @@ function Header() {
               </li>
               <li>
                 <Link
-                  to="/signup"
+                  to="/contact"
                   className="font-medium text-lg text-gray-600 hover:text-gray-900 px-3 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   KONTAKT
                 </Link>
               </li>
               <li>
-                <a href="https://www.instagram.com/agrimiadi" target="_blank">
+                <a href="https://www.instagram.com/agri.miadi" target="_blank">
                   <img
                     className="h-8 w-auto ml-5"
                     src={Instagram}

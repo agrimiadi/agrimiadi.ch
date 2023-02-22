@@ -1,11 +1,32 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Instagram from "../images/instagram.png";
 import Facebook from "../images/facebook.png";
 import Whatsapp from "../images/whatsapp.png";
+import Substack from "../images/substack.png";
 
 function Header() {
   const [top, setTop] = useState(true);
+  const { pathname, hash, key } = useLocation();
+
+  useEffect(() => {
+    // if not a hash link, scroll to top
+    if (hash === "") {
+      window.scrollTo(0, 0);
+    }
+    // else scroll to id
+    else {
+      setTimeout(() => {
+        const id = hash.replace("#", "");
+        console.log("id", id);
+        const element = document.getElementById(id);
+        console.log(element);
+        if (element) {
+          element.scrollIntoView();
+        }
+      }, 0);
+    }
+  }, [pathname, hash, key]); // do this on route change
 
   // detect whether user has scrolled the page down by 10px
   useEffect(() => {
@@ -57,7 +78,23 @@ function Header() {
                   to="/"
                   className="font-medium text-lg text-gray-600 hover:text-gray-900 py-3 flex items-center transition duration-150 ease-in-out"
                 >
-                  Der Hof
+                  DER HOF
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="#products"
+                  className="font-medium text-lg text-gray-600 hover:text-gray-900 px-3 py-3 flex items-center transition duration-150 ease-in-out"
+                >
+                  PRODUKTE
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="#story"
+                  className="font-medium text-lg text-gray-600 hover:text-gray-900 px-3 py-3 flex items-center transition duration-150 ease-in-out"
+                >
+                  UNSERE GESCHICHTE
                 </Link>
               </li>
               <li>
@@ -65,7 +102,7 @@ function Header() {
                   to="/signup"
                   className="font-medium text-lg text-gray-600 hover:text-gray-900 px-3 py-3 flex items-center transition duration-150 ease-in-out"
                 >
-                  Kontakt
+                  KONTAKT
                 </Link>
               </li>
               <li>
@@ -87,7 +124,12 @@ function Header() {
                   href="https://chat.whatsapp.com/FG8ccsdBPtYCortlZ5mKAf"
                   target="_blank"
                 >
-                  <img className="h-8 w-auto" src={Whatsapp} alt="Instagram" />
+                  <img className="h-8 w-auto" src={Whatsapp} alt="Whatsapp" />
+                </a>
+              </li>
+              <li>
+                <a href="https://agrimiadi.substack.com/" target="_blank">
+                  <img className="h-8 w-auto" src={Substack} alt="Substack" />
                 </a>
               </li>
             </ul>

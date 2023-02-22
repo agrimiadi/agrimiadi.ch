@@ -4,6 +4,7 @@ import Header from "../partials/Header";
 import HeroHome from "../partials/HeroHome";
 import FeaturesHome from "../partials/Features";
 import FeaturesBlocks from "../partials/FeaturesBlocks";
+import Footer from "../partials/Footer";
 
 function Home() {
   return (
@@ -15,8 +16,8 @@ function Home() {
       <main className="flex-grow">
         {/*  Page sections */}
         <HeroHome />
-        <FeaturesHome />
-        <FeaturesBlocks />
+        {/* <FeaturesHome /> */}
+        {/* <FeaturesBlocks /> */}
         {/* <Testimonials /> */}
         {/* <Newsletter /> */}
       </main>
@@ -24,7 +25,6 @@ function Home() {
       {/* <Banner /> */}
 
       {/*  Site footer */}
-      {/* <Footer /> */}
     </div>
   );
 }

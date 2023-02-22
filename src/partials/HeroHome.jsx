@@ -1,57 +1,328 @@
 import React from "react";
 
-import FamilyImage from "../images/family-miadi.jpeg";
+import { Link } from "react-router-dom";
+import Family from "../images/family.jpeg";
+import Cows from "../images/cows.jpeg";
+import Goats from "../images/goats.jpeg";
+import Sky from "../images/sky.jpeg";
+import Bees from "../images/bees.jpeg";
+import Chicken from "../images/chicken.jpeg";
+
+function StyledLink(props) {
+  return <a className="underline" {...props} />;
+}
 
 function HeroHome() {
   return (
-    <section className="relative">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        {/* Hero content */}
-        <div className="pt-32 pb-12 md:pt-40 md:pb-20">
-          {/* Section header */}
-          <div className="text-center pb-12 md:pb-16">
-            <h1
-              className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
-              data-aos="zoom-y-out"
-            >
-              Agri Miadi
-            </h1>
-            <div className="max-w-3xl mx-auto">
-              <p
-                className="text-xl text-left text-gray-600 mb-8"
+    <>
+      <section className="relative">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          {/* Hero content */}
+          <div className="pt-32 pb-12 md:pt-40 md:pb-0">
+            {/* Section header */}
+            <div className="text-center pb-12 md:pb-16">
+              <h1
+                className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
                 data-aos="zoom-y-out"
-                data-aos-delay="150"
               >
-                Eine etwas verrückte Geschichte einer Familie die ins abgelegene
-                Calancatal zieht um ihren Traum vom eigenen Bauernbetrieb im
-                Berggebiet zu verwirklichen. In den Hauptrollen sehen wir -
-                Sarah als Betriebsleiterin, den getreuen Knecht und Ehemann
-                Curdin, den kleinen Jon und nicht zu vergessen den etwas
-                durchgeknallten Bordercollie Sky.
+                Agri Miadi
+              </h1>
+              <div className="max-w-3xl mx-auto">
+                <p
+                  className="text-xl text-left text-gray-600 mb-8"
+                  data-aos="zoom-y-out"
+                  data-aos-delay="150"
+                >
+                  Wo die Ziegen noch wandern gehen, der Laubblässer an den
+                  steilsten Hängen nicht brummt und sich nur die Wagemutigen mit
+                  der Seilbahn hinauf getrauen.
+                </p>
+              </div>
+            </div>
+
+            {/* Hero image */}
+            {/* <div>
+              <div
+                className="relative flex justify-center mb-8"
+                data-aos="zoom-y-out"
+                data-aos-delay="450"
+              >
+                <div className="flex flex-col justify-center">
+                  <img
+                    className="mx-auto"
+                    src={Family}
+                    width="600"
+                    alt="Hero"
+                  />
+                </div>
+              </div>
+  </div>  */}
+          </div>
+        </div>
+      </section>
+      <section className="relative">
+        {/* Section background (needs .relative class on parent and next sibling elements) */}
+        <div
+          className="absolute inset-0 bg-gray-100 pointer-events-none mb-50"
+          aria-hidden="true"
+        ></div>
+        <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
+
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="pt-12 md:pt-20">
+            {/* Section header */}
+            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16 space-y-6">
+              <h1 className="h2 mb-4">WIR</h1>
+              <p className="text-lg text-left text-gray-600">
+                Was uns nicht liegt, ist Langeweile. Was uns gut liegt, sind
+                Abenteuer. Deshalb und wegen unseres unverbesserlichen
+                Optimismus zogen wir im Oktober 2022 nach Braggio im Calancatal,
+                um einen Bauernhof zu bewirtschaften. Region neu, Arbeit neu,
+                Sprache neu, alles neu. Ein Stall voll mit Ziegen und einem Bock
+                warten auf uns, Curdin und Sarah. Mit dabei haben wir unsere
+                mehr oder weniger tatkräftigen Helfer Jon und Sky. Jon, der
+                gerade erst zur Welt kam und sich noch nicht sicher ist, ob er
+                auch will, was seine Eltern wollen. Sky, der Bordercollie,
+                findet es super, so sieht er möglichst wenig andere Hunde, diese
+                seien nämlich die Pest.
               </p>
+              <img
+                className="md:max-w-none mx-auto rounded"
+                src={Family}
+                width="380"
+                // height="462"
+                alt="Features bg"
+              />
+              <p className="text-xl text-left text-gray-600"></p>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="relative">
+        <div
+          className="absolute inset-0 pointer-events-none mb-50"
+          aria-hidden="true"
+        ></div>
+        <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
 
-          {/* Hero image */}
-          <div>
-            <div
-              className="relative flex justify-center mb-8"
-              data-aos="zoom-y-out"
-              data-aos-delay="450"
-            >
-              <div className="flex flex-col justify-center">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="pt-12 md:pt-20">
+            {/* Section header */}
+
+            {/* Section header */}
+            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20 space-y-6">
+              <h2 className="h2 mb-4">UNSERE TIERE</h2>
+              <p className="text-lg text-left text-gray-600">
+                Unsere Ziegen sind kunterbunt, was ihre Farben, aber auch ihre
+                Gemüter anbelangt. Sie tragen alle Hörner und leben das ganze
+                Jahr mit ihrem Bock unter einem Dach. Wobei soviel sind sie gar
+                nicht unter Dach, denn jeden Tag dürfen sie auf ihren «Giro»
+                gehen, sie wandern über Wiesen und durch Wälder und essen, was
+                ihnen am besten schmeckt. Und im Sommer verweilen sie auf den
+                wunderschönen Alpgebieten des Calancatals. Finden sie im Winter
+                draussen nicht mehr genug, kriegen sie Heu vom Feinsten. Doch
+                die Ziegen sind weit in der Unterzahl gegenüber den
+                Abertausenden von Bienen, welche sich über die feinen Blüten
+                freuen und auf ihren weiten Flügen auch mal über die Köpfe der
+                gackernden Hühner fliegen. Diese entdecken auf ihren Streifzügen
+                immer wieder neue leckere Happen und spenden uns im Gegenzug
+                etwas Honig.
+              </p>
+              <div className="md:grid md:grid-cols-2">
                 <img
-                  className="mx-auto"
-                  src={FamilyImage}
-                  width="768"
-                  alt="Hero"
+                  className="md:max-w-none mx-auto rounded"
+                  src={Chicken}
+                  width="378"
+                  // height="462"
+                  alt="Features bg"
+                />
+                <img
+                  className="md:max-w-none mx-auto rounded"
+                  src={Goats}
+                  width="380"
+                  // height="462"
+                  alt="Features bg"
                 />
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section className="relative">
+        {/* Section background (needs .relative class on parent and next sibling elements) */}
+        <div
+          className="absolute inset-0 bg-gray-100 pointer-events-none mb-50"
+          aria-hidden="true"
+        ></div>
+        <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
+
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="pt-12 md:pt-20">
+            {/* Section header */}
+            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16 space-y-6">
+              <h1 className="h2 mb-4">UNSERE PHILOSOPHIE</h1>
+              <p className="text-lg text-left text-gray-600">
+                Unser Hof liegt auf über 1300 m.ü.M.. Zugänglich ist er nur mit
+                der Seilbahn. Futter zukaufen ist hier keine Option, die Tiere
+                mit der Seilbahn zu transportieren mühsam. Die steilen Hänge
+                sind kaum noch mit Maschinen zu befahren. Deshalb essen unsere
+                Tiere nur das Heu der eigenen Flächen. Die Heuernte verlangt
+                viel Handarbeit und ist kaum maschinell (sogar ohne Laubbläser).
+                Und unsere Tiere werden im Dorf geschlachtet und verarbeitet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="products" className="relative">
+        <div
+          className="absolute inset-0 pointer-events-none mb-50"
+          aria-hidden="true"
+        ></div>
+        <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
+
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="pt-12 md:pt-20">
+            {/* Section header */}
+
+            {/* Section header */}
+            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+              <h2 className="h2 mb-4">UNSERE PRODUKTE</h2>
+              <p className="text-lg text-left text-gray-600">
+                Falls dir gefällt was wir hier machen, haben wir vielleicht
+                einige Produkte dir gefallen könnten. Es ist nicht viel, dafür
+                aber hohe Qualität.
+              </p>
+              <h4 className="h4 my-4 text-left">Gizi Mischpakete</h4>
+              <p className="text-lg text-left text-gray-600">
+                Die Gizi werden jeweils im Frühjahr zwischen Februar und Mai
+                hier im Dorf geschlachtet. Bis dahin dürfen sie von ihrer Mutter
+                trinken und sobald sie gross genug sind auch mit auf den «Giro».
+                Die Pakete werden per Express über Nacht versendet. Ein
+                Mischpaket besteht aus 10kg Fleisch und kostet 35.- CHF pro
+                Kilo, Versandkosten inbegriffen. Auf Anfrage sind auch 5kg
+                Pakete möglich. Sobald wir in etwa die genau Anzahl Gizi wissen
+                können die Pakete vorbestellt werden.
+              </p>
+              <h4 className="h4 my-4 text-left">Herbstgizi Mischpakete</h4>
+              <p className="text-lg text-left text-gray-600">
+                Wir möchten gerne zumindest einigen Gizi ermöglichen, einen
+                Sommer auf der Alp zu verbringen. Die in Vergessenheit geratene
+                Delikatesse bietet zartes, fettarmes Fleisch. Wenn das dein
+                Interesse geweckt hat, melde dich doch. Da dies noch nicht so
+                verbreitet ist können wir dies nur auf Anfrage anbieten
+              </p>
+              <h4 className="h4 my-4 text-left">Geissen Mischpakete</h4>
+              <p className="text-lg text-left text-gray-600">
+                Alles wird verwertet, auch die älteren Tiere welche wir nicht
+                mehr mit gutem Gewissen auf die Alp schicken können werden hier
+                im Dorf geschlachtet und verwertet.
+              </p>
+              <h4 className="h4 my-4 text-left">Bienen Honig</h4>
+              <p className="text-lg text-left text-gray-600">
+                Momentan haben wir zwischen 3 bis 6 Bienenvölker und verkaufen
+                Honig nur wenn wir Überschuss haben. Viele Imker gibt es nicht
+                in diesem Tal. Falls du also solch eine Rarität wills musst du
+                schnell sein!
+              </p>
+              <h4 className="h4 my-4 text-left">Bestellungen</h4>
+              <p className="text-lg text-left text-gray-600">
+                Da unsere Produkte saisonal sind, kündigen wir jeweils auf
+                unseren Kanälen (WhatsApp & Social Media) an sobald sie
+                verfügbar sind. Bestellen kannst du dann direkt über WhatsApp,
+                per Email oder ganz herkömmlich per Telefon.
+                <br />
+                <br /> Falls dein Budget etwas knapp ist du aber trotzdem gerne
+                etwas von unseren Produkten beziehen möchtest nimm doch Kontakt
+                auf.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="relative">
+        <div
+          className="absolute inset-0 bg-gray-100 pointer-events-none mb-50"
+          aria-hidden="true"
+        ></div>
+        <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
+
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="pt-12 md:pt-20"></div>
+          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+            <h2 className="h2 mb-4">SEI TEIL DES ABENTEUERS</h2>
+            <p className="text-lg text-left text-gray-600">
+              Möchtest du Teil des Abenteuers werden, dann komm in unsere{" "}
+              <StyledLink href="https://chat.whatsapp.com/FG8ccsdBPtYCortlZ5mKAf">
+                WhatsApp Gruppe
+              </StyledLink>{" "}
+              und folge uns auf{" "}
+              <StyledLink href="https://www.instagram.com/agrimiadi">
+                Instagram
+              </StyledLink>{" "}
+              oder{" "}
+              <StyledLink href="https://www.facebook.com/agrimiadi">
+                Facebook
+              </StyledLink>
+              . Dort erfährst du immer das Neuste, was gerade so läuft auf dem
+              Hof. Willst du vielleicht mal beim «Giro» dabei sein, bei der
+              Heuernte mithelfen oder sofort erfahren sobald neue Produkte
+              verfügbar sind? Dann bist du dort genau richtig.
+            </p>
+            {/* <div className="md:grid md:grid-cols-2">
+                <img
+                  className="md:max-w-none mx-auto rounded"
+                  src={Chicken}
+                  width="380"
+                  // height="462"
+                  alt="Features bg"
+                />
+                <img
+                  className="md:max-w-none mx-auto rounded"
+                  src={Goats}
+                  width="380"
+                  // height="462"
+                  alt="Features bg"
+                />
+              </div> */}
+          </div>
+        </div>
+      </section>
+      <section id="story" className="relative">
+        <div
+          className="absolute inset-0 pointer-events-none mb-50"
+          aria-hidden="true"
+        ></div>
+        <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
+
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="pt-12 md:pt-20">
+            {/* Section header */}
+
+            {/* Section header */}
+            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+              <h2 className="h2 mb-4">UNSERE GESCHICHTE </h2>
+              <p className="text-lg text-left text-gray-600">
+                Willst du noch mehr über uns, unsere Tiere und den Alltag auf
+                dem Bergbauernhof erfahren, dann gibt es das auch als
+                experimentellen Roman. Alle 2 bis 4 Wochen am Sonntag Morgen
+                wird ein neues Kapitel auf{" "}
+                <StyledLink
+                  href="https://agrimiadi.substack.com/"
+                  target="_blank"
+                >
+                  Substack
+                </StyledLink>{" "}
+                veröffentlicht. Dort kannst du sie entweder direkt lesen oder
+                als Newsletter abonnieren. Die Autoren erlauben sich jedoch auch
+                etwas kreative Freiheit, deshalb nimm nicht alles für bare
+                Münze.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
 

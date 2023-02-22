@@ -81,7 +81,7 @@ function Header() {
                   DER HOF
                 </Link>
               </li>
-              <li className="hidden md:block">
+              <li className="hidden md:block pl-3">
                 <Link
                   to="/#products"
                   className="font-medium text-lg text-gray-600 hover:text-gray-900 px-3 py-3 flex items-center transition duration-150 ease-in-out"

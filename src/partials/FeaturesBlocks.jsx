@@ -1,117 +1,217 @@
 import React from "react";
-import Sky from "../images/sky.jpeg";
-import Bees from "../images/bees.jpeg";
-import Chicken from "../images/chicken.jpeg";
 
 function FeaturesBlocks() {
   return (
-    <>
-      <section className="relative">
-        <div
-          className="absolute inset-0 pointer-events-none mb-50"
-          aria-hidden="true"
-        ></div>
-        <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
+    <section className="relative">
+      {/* Section background (needs .relative class on parent and next sibling elements) */}
+      <div
+        className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-gray-900 pointer-events-none"
+        aria-hidden="true"
+      ></div>
+      <div className="absolute left-0 right-0 bottom-0 m-auto w-px p-px h-20 bg-gray-900 transform translate-y-1/2"></div>
 
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="pt-12 md:pt-20">
-            {/* Section header */}
-
-            {/* Section header */}
-            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-              <h2 className="h2 mb-4">Was zum Teufel tuen wir hier?</h2>
-              <p className="text-xl text-left text-gray-600">
-                Diese Frage wird sich unsere kleine Familie wohl noch einige
-                Male fragen, aber was hat sie eigentlich in dieses, für
-                schweizer Verhältnisse wilde Tal verschlagen? Würde man Sky
-                fragen, dann würde er mit einem bestimmten "Damit wir keine
-                anderen dieser miesen Köter mehr treffen müssen" antworten. Denn
-                obwhohl er selbst einer ist, kann er andere Hunde auf den Tod
-                nicht ausstehen. Die sind die Pest! Schnaubt er wenn er darauf
-                angesprochen wird und will nichts mehr von seinen Artgenossen
-                hören. Das einzige was er will ist, andere Tiere vor sich
-                hertreiben. Oder wandern ist auch ganz ok, Hauptsache Bewegung!
-              </p>
-              <img
-                className="mx-auto rounded py-6"
-                src={Sky}
-                width="768"
-                alt="Sky"
-              />
-              <p className="text-xl text-left text-gray-600">
-                Aber wir schweifen ab. Interessanter wäre es zu wissesn, was
-                Sarah und Curdin dazu angetrieben hat sich im Calancatal nieder
-                zulassen. Wer dieses Tal kennt, und das sind wohl nicht gerde
-                viele, weiss dass es in diesem Tal vor allem eines ist, steil
-                und felsig. Und aus einem, wohl nicht für jeden
-                nachvollziehbaren Grund, reizt die Beiden genau das. Eine rauhe
-                Umgebung, viel Handarbeit, viel Schweiss und Leidenschaf umgeben
-                von kleinen, ziemlich frechen und gerne schmatzenden
-                Wiederkäuern.
-              </p>
-            </div>
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="py-12 md:py-20">
+          {/* Section header */}
+          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-10">
+            <h2 className="h2 mb-4">UNSERE PRODUKTE</h2>
+            <p className="text-lg text-gray-600">
+              Wir produzieren nicht in grossen Mengen, dafür mit viel Qualität.
+              Falls Dir gefällt, wie und was wir tun, findest Du vielleicht
+              etwas Feines. Fleisch wird jeweils per Express über Nacht
+              versendet. Die Liefergebühren sind im Preis inbegriffen.
+            </p>
           </div>
-        </div>
-      </section>
-      <section className="relative">
-        {/* Section background (needs .relative class on parent and next sibling elements) */}
-        <div
-          className="absolute inset-0 bg-gray-100 pointer-events-none mb-50"
-          aria-hidden="true"
-        ></div>
-        <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
 
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="pt-12 md:pt-20">
-            {/* Section header */}
-            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16 space-y-6">
-              <h1 className="h2 mb-4">Wovon leben wir denn?</h1>
-              <p className="text-xl text-left text-gray-600">
-                Ja diese Frage stellen sich in der Landwirtschaft leider immer
-                mehr und natürlich auch Sarah und Curdin. Und dann noch in
-                solcher Lage! Nur von Luft und Liebe können sie leider auch
-                nicht leben. Glücklicherweise gibt es an diesen kargen, mageren
-                Hängen etwas sehr wertvolles was ihnen auch sehr am Herzen
-                liegt. Und ihr Wert wird mit Sicherheit steigen. Also eigentlich
-                eine sichere Geldanlage. Wir sprechen von ihr, der
-                sagenumwogenen, viel diskutierten und zu höchster Wichtigkeit
-                emporerhobenen Biodiversität. Sie zu erhalten und zu fördern ist
-                eine der wichtigsten, und leugnen wir es nicht, auch auch
-                Ertagsbringendsten Tätigkeiten in solch einer Umgebung. Aber nur
-                davon reicht es nicht zum leben, weshalb sie auch Gizi und
-                Geissenfleisch verkaufen sowie in die Milchverarbeitung
-                einsteigen wollen. Dazu noch ein paar Bienenvölker, ein paar
-                Hühner und wer weiss was sonst nocht kommt. Kreativ muss man
-                heutzutage sein, und das ist unsere Familie allemale!
+          {/* Items */}
+          <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-2 items-start md:max-w-2xl lg:max-w-none">
+            {/* 1st item */}
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl h-full">
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-3">
+                Gitzi Mischpakete
+              </h4>
+              <p className="text-gray-600 text-center">
+                Die Gitzi werden jeweils im Frühjahr zwischen Februar und Mai
+                hier im Dorf geschlachtet. Bis dahin dürfen sie von ihren
+                Müttern trinken und sobald sie gross genug sind auch mit auf den
+                «Giro» gehen.
               </p>
-              <div className="md:grid md:grid-cols-2">
-                <img
-                  className="md:max-w-none mx-auto rounded"
-                  src={Bees}
-                  width="380"
-                  // height="462"
-                  alt="Features bg"
-                />
-                <img
-                  className="md:max-w-none mx-auto rounded"
-                  src={Chicken}
-                  width="380"
-                  // height="462"
-                  alt="Features bg"
-                />
+              <div className="pt-4 flex space-x-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z"
+                  />
+                </svg>
+                <div>5kg / 10kg</div>
               </div>
-              <p className="text-xl text-left text-gray-600">
-                Nun denn, so ist dieses Abenteuer gestartet, und falls du wissen
-                willst wie die Geschichte weitergeht, oder du Interesse an ihren
-                Produkten hast, dann folge ihnen am besten auf Socil Media oder
-                schau in ihre Whatsapp Gruppe rein. Sie würden sich siche
-                freuen.
+              <div className="pt-4 flex space-x-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"
+                  />
+                </svg>
+                <div>35 CHF pro Kilo</div>
+              </div>
+            </div>
+
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl h-full">
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-3">
+                Herbstgitzi Mischpakete
+              </h4>
+              <p className="text-gray-600 text-center">
+                Im Sommer wachsen die Gitzi nur noch wenig, doch die
+                Fleischqualität verändert sich. Dass Fleisch wird röter, ist
+                fettarm und erinnert an Wild. Falls Du Interesse an dieser
+                Delikatesse hast, melde Dich bei uns. Da dies noch nicht
+                verbreitet ist, können wir dies nur auf Anfrage anbieten.
               </p>
+              <div className="pt-4 flex space-x-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z"
+                  />
+                </svg>
+                <div>auf Anfrage</div>
+              </div>
+              <div className="pt-4 flex space-x-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"
+                  />
+                </svg>
+                <div>30 CHF pro Kilo</div>
+              </div>
+            </div>
+
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl h-full">
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-3">
+                Geissen Mischpakete
+              </h4>
+              <p className="text-gray-600 text-center">
+                Alles wird verwertet, auch die älteren Tiere, welche wir nicht
+                mehr mit gutem Gewissen auf die Alp schicken können, werden hier
+                im Dorf geschlachtet und verwertet.
+              </p>
+              <div className="pt-4 flex space-x-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z"
+                  />
+                </svg>
+                <div>auf Anfrage</div>
+              </div>
+              <div className="pt-4 flex space-x-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"
+                  />
+                </svg>
+                <div>20 CHF pro Kilo</div>
+              </div>
+            </div>
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl h-full">
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-3">
+                Bienen Honig
+              </h4>
+              <p className="text-gray-600 text-center">
+                Wir haben zwischen drei und sechs Bienenvölker und verkaufen
+                Honig nur wenn wir Überschuss haben. Viele Imker gibt es nicht
+                in diesem Tal. Falls Du solch eine Rarität willst, musst Du
+                schnell sein!
+              </p>
+              <div className="pt-4 flex space-x-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z"
+                  />
+                </svg>
+                <div>250g / 500g / 1kg</div>
+              </div>
+              <div className="pt-4 flex space-x-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"
+                  />
+                </svg>
+                <div>20 CHF pro Kilo</div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
 

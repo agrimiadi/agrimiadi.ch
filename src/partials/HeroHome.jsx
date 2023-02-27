@@ -111,17 +111,21 @@ function HeroHome() {
             <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16 space-y-6">
               <h1 className="h2 mb-4 text-gray-800">WIR</h1>
               <p className="text-lg text-left text-gray-800">
-                Was uns nicht liegt, ist Langeweile. Was uns gut liegt, sind
-                Abenteuer. Deshalb und wegen unseres unverbesserlichen
-                Optimismus zogen wir im Oktober 2022 nach Braggio im Calancatal,
-                um einen Bauernhof zu bewirtschaften. Region neu, Arbeit neu,
-                Sprache neu, alles neu. Ein Stall voll mit Ziegen und einem Bock
-                warteten auf uns, Curdin und Sarah. Mit dabei haben wir unsere
-                mehr oder weniger tatkräftigen Helfer Jon und Sky. Jon, der
-                gerade erst zur Welt kam und sich noch nicht sicher ist, ob er
-                auch will, was seine Eltern wollen. Sky, der Bordercollie,
-                findet es super in Braggio. Hier trifft er nur selten
-                Artgenossen, diese seien nämlich die Pest.
+                Sarah, Curdin, Jon und Sky, das ist unsere kleine Familie. Im
+                Oktober 2022 sind wir zu einem Abenteuer aufgebrochen. Das Ziel,
+                ein Bergbauernhof in Braggio im wunderschönen Parco Val Calanca.
+                Sarah, mit einer Ausbildung als Umweltingenieurin in
+                biologischher Landwirtschaft, übernimmt die Betriebsleitung,
+                Curdin, der auf einem Hof aufgewachsen ist, jedoch nur eine
+                Ausbildung als Softwareentwickler hat, darf als Knecht anheuern
+                und Sky, der etwas durchgeknallte Bordercollie, wird als
+                Hilfshirte auf Probe eingestellt. Jon, der kleine Knirps, macht
+                den Allrounder, oder sowas. Ein Stall voll mit Ziegen und einem
+                Bock warten auf uns, jeden Tag! Aber Langeweile liegt uns
+                sowieso nicht. Und genau sowas haben wir immer gesucht - einen
+                kleinen Hof in den Bergen (minimum Bergzone 4 natürlich) mit
+                schmatzenden Kleinwiderkeuern und viel Handarbeit. Klingt
+                vielleicht etwas wild und das ist es wohl auch.
               </p>
               <img
                 className="md:max-w-none mx-auto rounded"
@@ -197,14 +201,36 @@ function HeroHome() {
             <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20 space-y-6">
               <h1 className="h2 mb-4 text-gray-800">UNSERE PHILOSOPHIE</h1>
               <p className="text-lg text-left text-gray-800">
-                Unser Hof liegt auf über 1300 m.ü.M.. Zugänglich ist er nur mit
-                der Seilbahn. Es geht entweder hinauf oder hinunter. Futter dazu
+                Wenn wir unsere Philosophie in einem Wort beschreiben wollen,
+                dann wäre das wohl "enkeltaugliche Landwirtschaft". Ok, das sind
+                zwei Worte, aber was solls. Entscheidend ist, dass wir nur das
+                verwenden, was wir hier haben. Sprich kein Futterzukauf oder
+                sowas. Durch die etwas schwierigen Tarnsportbedingungen mit der
+                Seilbahn fällt dies einem auch leicht. Wir brauchen das auch
+                nicht! Die feinen Kräuter mögen es nämlich steinig!
+                <br /> Wir bewirtschaften das Land so, dass wir möglichst wenig
+                Spuren hinterlassen. Wir wünschen uns nämlich, das klein Jon und
+                seine Kinder auch noch diesen wunderschönen Ort hier geniessen
+                können. So verwenden wir ein Minimum an Maschinen. Sprich ein
+                Motormäher und ein Tarnsporter. Der Rest passiert von Hand.
+                <br /> Um das Schlachten der Tiere so stressfrei wie möglich zu
+                machen und den Tieren den Transport zu ersparen, schlachten wir
+                im hier im Dorf. Das Fleisch wird auch hier verschnitten,
+                verpackt und danach verschickt. Alles so lokal wie irgendwie
+                möglich.
+                {/* dann wollen wir
+                ihnen ermöglichen, ihre Bedürfnisse Wir produzieren Obwohl all
+                die schönen Blumen nicht ganz unrentabel sind, produzieren wir
+                auch noch andere Sachen. Im Konkreten können wir leider nicht
+                nur davon leben, . wie auch keine andere Wahl , dann Unser Hof
+                liegt auf über 1300 m.ü.M.. Zugänglich ist er nur mit der
+                Seilbahn. Es geht entweder hinauf oder hinunter. Futter dazu
                 zukaufen ist hier keine Option, die Tiere mit der Seilbahn zu
                 transportieren mühsam. Die steilen Hänge sind kaum noch mit
                 Maschinen zu befahren. Deshalb essen unsere Tiere nur das Heu
                 der eigenen Flächen. Die Heuernte verlangt viel Handarbeit und
                 ist kaum mechanisiert. Und unsere Tiere werden im Dorf
-                geschlachtet und verarbeitet.
+                geschlachtet und verarbeitet. */}
               </p>
               <img
                 className="md:max-w-none mx-auto rounded"

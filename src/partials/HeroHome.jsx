@@ -97,7 +97,7 @@ function HeroHome() {
           </div>
         </div>
       </section>
-      <section className="relative">
+      <section id="we" className="relative">
         {/* Section background (needs .relative class on parent and next sibling elements) */}
         <div
           className="absolute inset-0 bg-gray-100 pointer-events-none mb-50"
@@ -135,7 +135,7 @@ function HeroHome() {
           </div>
         </div>
       </section>
-      <section className="relative">
+      <section id="animals" className="relative">
         <div
           className="absolute inset-0 pointer-events-none mb-50"
           aria-hidden="true"
@@ -183,7 +183,7 @@ function HeroHome() {
           </div>
         </div>
       </section>
-      <section className="relative">
+      <section id="philosophy" className="relative">
         {/* Section background (needs .relative class on parent and next sibling elements) */}
         <div
           className="absolute inset-0 bg-gray-100 pointer-events-none mb-50"
@@ -236,12 +236,15 @@ function HeroHome() {
                 Wir produzieren nicht in grossen Mengen, dafür mit viel
                 Qualität. Falls Dir gefällt, wie und was wir tun, findest Du
                 vielleicht etwas Feines. Fleisch wird jeweils per{" "}
-                <StyledLink href="" target="_blank">
+                <StyledLink
+                  href="https://www.post.ch/de/pakete-versenden/express-und-kurier/swiss-express-mond"
+                  target="_blank"
+                >
                   Swiss-Express «Mond»{" "}
                 </StyledLink>
                 über Nacht versendet oder kann tiefgefroren abgeholt werden.
-                Falls Du Fragen hast komm doch in usere <WhatsAppGroupLink />{" "}
-                oder ruf uns direkt an auf 079 756 71 81.
+                Falls Du Fragen hast, komm doch in usere <WhatsAppGroupLink />{" "}
+                oder ruf uns direkt an unter 079 756 71 81.
               </p>
             </div>
 
@@ -321,7 +324,7 @@ function HeroHome() {
                 </h4>
                 <p className="text-gray-600 text-left">
                   Im Sommer wachsen die Gitzi nur noch wenig, doch die
-                  Fleischqualität verändert sich. Dass Fleisch wird röter, ist
+                  Fleischqualität verändert sich. Das Fleisch wird roter, ist
                   fettarm und erinnert an Wild. Falls Du Interesse an dieser
                   Delikatesse hast, melde Dich bei uns. Da dies noch nicht
                   verbreitet ist, können wir dies nur auf Anfrage anbieten.
@@ -341,7 +344,7 @@ function HeroHome() {
                       d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z"
                     />
                   </svg>
-                  <div>5kg / 10kg</div>
+                  <div>4kg / 8kg</div>
                 </div>
                 <div className="pt-4 flex space-x-2">
                   <svg
@@ -421,7 +424,7 @@ function HeroHome() {
                       d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z"
                     />
                   </svg>
-                  <div>auf Wunsch</div>
+                  <div>nach Wunsch</div>
                 </div>
                 <div className="pt-4 flex space-x-2">
                   <svg
@@ -504,7 +507,7 @@ function HeroHome() {
                       d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"
                     />
                   </svg>
-                  <div>25 CHF pro Kilo</div>
+                  <div>30 CHF pro Kilo</div>
                 </div>
                 <div className="pt-4 flex space-x-2">
                   <svg
@@ -546,7 +549,7 @@ function HeroHome() {
         </div>
       </section>
 
-      <section className="relative">
+      <section id="story" className="relative">
         <div
           className="absolute bg-gray-100 inset-0 pointer-events-none mb-50"
           aria-hidden="true"
@@ -560,11 +563,17 @@ function HeroHome() {
             <p className="text-lg text-left text-gray-800">
               Möchtest Du Teil des Abenteuers werden, dann komm in unsere{" "}
               <WhatsAppGroupLink /> und folge uns auf{" "}
-              <StyledLink href="https://www.instagram.com/agrimiadi">
+              <StyledLink
+                href="https://www.instagram.com/agri.miadi"
+                target="_blank"
+              >
                 Instagram
               </StyledLink>{" "}
               oder{" "}
-              <StyledLink href="https://www.facebook.com/agrimiadi">
+              <StyledLink
+                href="https://www.facebook.com/agrimiadi"
+                target="_blank"
+              >
                 Facebook
               </StyledLink>
               . Dort erfährst Du immer alle Neuigkeiten und kannst verfolgen ,

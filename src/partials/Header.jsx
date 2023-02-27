@@ -18,11 +18,18 @@ function Header() {
     else {
       setTimeout(() => {
         const id = hash.replace("#", "");
-        console.log("id", id);
         const element = document.getElementById(id);
-        console.log(element);
         if (element) {
-          element.scrollIntoView();
+          element.scrollIntoView({});
+          // var element = document.getElementById('targetElement');
+          var offset = 40;
+          var elementPosition = element.getBoundingClientRect().top;
+          var offsetPosition = elementPosition + window.pageYOffset - offset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
         }
       }, 0);
     }
@@ -64,7 +71,7 @@ function Header() {
 
           {/* Site navigation */}
           <nav className="flex flex-grow">
-            <ul className="flex flex-grow justify-end flex-wrap items-center space-x-2">
+            <ul className="flex flex-grow justify-center flex-wrap items-center space-x-1">
               {/* <li>
                 <Link
                   to="/signin"
@@ -73,42 +80,80 @@ function Header() {
                   Bestellformular
                 </Link>
               </li> */}
-              <li>
+              {/* <li>
                 <Link
                   to="/"
                   className="font-medium text-lg text-gray-600 hover:text-gray-900 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   DER HOF
                 </Link>
-              </li>
-              <li className="hidden md:block pl-3">
+              </li> */}
+              <li>
                 <Link
-                  to="/#products"
-                  className="font-medium text-lg text-gray-600 hover:text-gray-900 px-3 py-3 flex items-center transition duration-150 ease-in-out"
+                  to="/"
+                  className="font-medium text-lg text-gray-600 hover:text-gray-900 py-3 flex items-center transition duration-150 ease-in-out"
                 >
-                  PRODUKTE
+                  HOF
                 </Link>
               </li>
               <li className="hidden md:block">
                 <Link
-                  to="/#story"
-                  className="font-medium text-lg text-gray-600 hover:text-gray-900 px-3 py-3 flex items-center transition duration-150 ease-in-out"
+                  to="/#we"
+                  className="font-medium text-lg text-gray-600 hover:text-gray-900 px-2 py-3 flex items-center transition duration-150 ease-in-out"
                 >
-                  UNSERE GESCHICHTE
+                  WIR
+                </Link>
+              </li>
+              <li className="hidden md:block">
+                <Link
+                  to="/#animals"
+                  className="font-medium text-lg text-gray-600 hover:text-gray-900 px-2 py-3 flex items-center transition duration-150 ease-in-out"
+                >
+                  TIERE
+                </Link>
+              </li>
+              <li className="hidden md:block">
+                <Link
+                  to="/#philosophy"
+                  className="font-medium text-lg text-gray-600 hover:text-gray-900 px-2 py-3 flex items-center transition duration-150 ease-in-out"
+                >
+                  PHILOSOPHIE
+                </Link>
+              </li>
+              <li className="">
+                <Link
+                  to="/#products"
+                  className="font-medium text-lg text-gray-600 hover:text-gray-900 px-2 py-3 flex items-center transition duration-150 ease-in-out"
+                >
+                  PRODUKTE
                 </Link>
               </li>
               <li>
                 <Link
                   to="/contact"
-                  className="font-medium text-lg text-gray-600 hover:text-gray-900 px-3 py-3 flex items-center transition duration-150 ease-in-out"
+                  className="font-medium text-md md:text-lg text-gray-600 hover:text-gray-900 px-2 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   KONTAKT
                 </Link>
               </li>
-              <li>
+              <li className="">
+                {/* <Link
+                  to="/#adventurer"
+                  className="font-medium text-lg text-gray-600 hover:text-gray-900 px-3 py-3 flex items-center transition duration-150 ease-in-out"
+                > */}
+                <a
+                  className="font-medium text-lg text-gray-600 hover:text-gray-900 px-2 py-3 flex items-center transition duration-150 ease-in-out"
+                  href="https://agrimiadi.substack.com/"
+                  target="_blank"
+                >
+                  BLOG
+                </a>
+                {/* </Link> */}
+              </li>
+              {/* <li>
                 <a href="https://www.instagram.com/agri.miadi" target="_blank">
                   <img
-                    className="h-6 w-auto ml-2"
+                    className="h-6 md:h-7 w-auto"
                     src={Instagram}
                     alt="Instagram"
                   />
@@ -116,7 +161,11 @@ function Header() {
               </li>
               <li>
                 <a href="https://www.facebook.com/agrimiadi" target="_blank">
-                  <img className="h-6 w-auto" src={Facebook} alt="Facebook" />
+                  <img
+                    className="h-6 md:h-7 pl-1 w-auto"
+                    src={Facebook}
+                    alt="Facebook"
+                  />
                 </a>
               </li>
               <li>
@@ -124,14 +173,18 @@ function Header() {
                   href="https://chat.whatsapp.com/FG8ccsdBPtYCortlZ5mKAf"
                   target="_blank"
                 >
-                  <img className="h-6 w-auto" src={Whatsapp} alt="Whatsapp" />
+                  <img
+                    className="h-6 md:h-7 pl-1 w-auto"
+                    src={Whatsapp}
+                    alt="Whatsapp"
+                  />
                 </a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a href="https://agrimiadi.substack.com/" target="_blank">
                   <img className="h-6 w-auto" src={Substack} alt="Substack" />
                 </a>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>

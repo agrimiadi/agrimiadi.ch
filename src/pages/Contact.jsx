@@ -97,7 +97,7 @@ function Contact() {
                         />
                       </a>
                       <a
-                        href="https://www.facebook.com/agrimiadi"
+                        href="https://www.facebook.com/agri.miadi"
                         target="_blank"
                       >
                         <img

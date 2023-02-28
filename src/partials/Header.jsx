@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import Instagram from "../images/instagram.png";
-import Facebook from "../images/facebook.png";
-import Whatsapp from "../images/whatsapp.png";
-import Substack from "../images/substack.png";
 
 function Header() {
   const [top, setTop] = useState(true);

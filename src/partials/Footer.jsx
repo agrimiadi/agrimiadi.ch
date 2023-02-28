@@ -21,7 +21,7 @@ function Footer() {
               </a>
             </li>
             <li className="ml-2">
-              <a href="https://www.facebook.com/agrimiadi" target="_blank">
+              <a href="https://www.facebook.com/agri.miadi" target="_blank">
                 <img
                   className="h-7 pl-1 w-auto"
                   src={Facebook}

@@ -132,11 +132,7 @@ function Header() {
                   KONTAKT
                 </Link>
               </li>
-              <li className="">
-                {/* <Link
-                  to="/#adventurer"
-                  className="font-medium text-lg text-gray-600 hover:text-gray-900 px-3 py-3 flex items-center transition duration-150 ease-in-out"
-                > */}
+              {/* <li className="">
                 <a
                   className="font-medium text-lg text-gray-600 hover:text-gray-900 px-2 py-3 flex items-center transition duration-150 ease-in-out"
                   href="https://agrimiadi.substack.com/"
@@ -144,8 +140,7 @@ function Header() {
                 >
                   BLOG
                 </a>
-                {/* </Link> */}
-              </li>
+              </li> */}
               {/* <li>
                 <a href="https://www.instagram.com/agri.miadi" target="_blank">
                   <img

@@ -35,7 +35,7 @@ function PickUpOrder() {
         >
           Post
         </StyledLink>{" "}
-        (22 CHF)
+        (23 CHF)
       </div>
     </>
   );
@@ -72,7 +72,7 @@ function HeroHome() {
                 >
                   Wo die Ziegen wandern dürfen, die Heuernte noch ein Handwerk
                   ist und sich nur die Wagemutigen mit der Seilbahn hinauf
-                  getrauen.
+                  wagen.
                 </p>
               </div>
             </div>
@@ -111,21 +111,16 @@ function HeroHome() {
             <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16 space-y-6">
               <h1 className="h2 mb-4 text-gray-800">WIR</h1>
               <p className="text-lg text-left text-gray-800">
-                Sarah, Curdin, Jon und Sky, das ist unsere kleine Familie. Im
-                Oktober 2022 sind wir zu einem Abenteuer aufgebrochen. Das Ziel,
-                ein Bergbauernhof in Braggio im wunderschönen Parco Val Calanca.
-                Sarah, mit einer Ausbildung als Umweltingenieurin in
+                Sarah, Curdin, Jon, Anna und Sky, das ist unsere kleine Familie.
+                Im Oktober 2022 sind wir zu einem Abenteuer aufgebrochen. Das
+                Ziel, ein Bergbauernhof in Braggio im wunderschönen Parco Val
+                Calanca. Sarah, mit einer Ausbildung als Umweltingenieurin in
                 biologischher Landwirtschaft, übernimmt die Betriebsleitung,
                 Curdin, der auf einem Hof aufgewachsen ist, jedoch nur eine
                 Ausbildung als Softwareentwickler hat, darf als Knecht anheuern
                 und Sky, der etwas durchgeknallte Bordercollie, wird als
-                Hilfshirte auf Probe eingestellt. Jon, der kleine Knirps, macht
-                den Allrounder, oder sowas. Ein Stall voll mit Ziegen und einem
-                Bock warten auf uns, jeden Tag! Aber Langeweile liegt uns
-                sowieso nicht. Und genau sowas haben wir immer gesucht - einen
-                kleinen Hof in den Bergen (minimum Bergzone 4 natürlich) mit
-                schmatzenden Kleinwiderkeuern und viel Handarbeit. Klingt
-                vielleicht etwas wild und das ist es wohl auch.
+                Hilfshirte auf Probe eingestellt. Jon und Anna machen die
+                Allrounder, oder sowas.
               </p>
               <img
                 className="md:max-w-none mx-auto rounded"
@@ -166,6 +161,10 @@ function HeroHome() {
                 Abertausenden von Bienen, welche sich über die feinen Blüten
                 freuen und auf ihren weiten Flügen auch mal über die Köpfe der
                 gackernden Hühner fliegen.
+                <br />
+                Die drei Eseldamen interessieren sich weder für den krähenden
+                Hahn noch für die meckernden Ziegen, denn sie sind sowieso die
+                Lautesten auf dem Hof.
               </p>
               <div className="md:grid md:grid-cols-2">
                 <img
@@ -209,10 +208,11 @@ function HeroHome() {
                 Seilbahn fällt dies einem auch leicht. Wir brauchen das auch
                 nicht! Die feinen Kräuter mögen es nämlich steinig!
                 <br /> Wir bewirtschaften das Land so, dass wir möglichst wenig
-                Spuren hinterlassen. Wir wünschen uns nämlich, das klein Jon und
-                seine Kinder auch noch diesen wunderschönen Ort hier geniessen
-                können. So verwenden wir ein Minimum an Maschinen. Sprich ein
-                Motormäher und ein Tarnsporter. Der Rest passiert von Hand.
+                Spuren hinterlassen. Wir wünschen uns nämlich, dass klein Jon
+                und Anna sowie deren Kinder und Kindeskinder auch noch diesen
+                wunderschönen Ort hier geniessen können. So verwenden wir ein
+                Minimum an Maschinen. Sprich ein Motormäher und ein Tarnsporter.
+                Der Rest passiert von Hand.
                 <br /> Um das Schlachten der Tiere so stressfrei wie möglich zu
                 machen und den Tieren den Transport zu ersparen, schlachten wir
                 im hier im Dorf. Das Fleisch wird auch hier verschnitten,
@@ -352,8 +352,7 @@ function HeroHome() {
                   Im Sommer wachsen die Gitzi nur noch wenig, doch die
                   Fleischqualität verändert sich. Das Fleisch wird roter, ist
                   fettarm und erinnert an Wild. Falls Du Interesse an dieser
-                  Delikatesse hast, melde Dich bei uns. Da dies noch nicht
-                  verbreitet ist, können wir dies nur auf Anfrage anbieten.
+                  Delikatesse hast, melde Dich beireits im Frühjahr bei uns.
                 </p>
                 <div className="pt-4 flex space-x-2">
                   <svg
@@ -411,29 +410,28 @@ function HeroHome() {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke-width="1.5"
+                    strokeWidth={1.5}
                     stroke="currentColor"
-                    class="w-6 h-6"
+                    className="w-6 h-6"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                     />
                   </svg>
-
-                  <div>Nur auf Anfrage</div>
+                  <div>Vorbestellung möglich</div>
                 </div>
               </div>
 
               <div className="relative flex flex-col p-6 bg-white rounded shadow-xl h-full">
                 <h4 className="text-xl font-bold leading-snug tracking-tight mb-3">
-                  Geissen Mischpakete
+                  Geissenfleisch
                 </h4>
                 <p className="text-gray-600 text-left">
-                  Alles wird verwertet, auch die älteren Tiere, welche wir nicht
-                  mehr mit gutem Gewissen auf die Alp schicken können, werden
-                  hier im Dorf geschlachtet und verwertet.
+                  Alles wird verwertet, auch die älteren Tiere. Wir verareiten
+                  das Fleisch zu Hack, Trockenfleisch und Würsten. Frag am
+                  besten direkt nach.
                 </p>
                 <div className="pt-4 flex space-x-2">
                   <svg
@@ -482,13 +480,24 @@ function HeroHome() {
                     stroke="currentColor"
                     className="w-6 h-6"
                   >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="#1C274C"
+                      stroke-width="1.5"
+                    />
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                      // d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                      d="M10.125 8.875C10.125 7.83947 10.9645 7 12 7C13.0355 7 13.875 7.83947 13.875 8.875C13.875 9.56245 13.505 10.1635 12.9534 10.4899C12.478 10.7711 12 11.1977 12 11.75V13"
+                      // d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.
+                      // 326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
                     />
+                    <circle cx="12" cy="16" r="0.5" fill="#1C274C" />
                   </svg>
-                  <div>Momentan nicht verfügbar</div>
+                  <div>Auf Anfrage</div>
                 </div>
               </div>
               <div className="relative flex flex-col p-6 bg-white rounded shadow-xl h-full">
@@ -608,16 +617,6 @@ function HeroHome() {
               sobald neue Produkte verfügbar sind? Dann bist du dort genau
               richtig. <br />
               <br />
-              Willst du noch mehr über unseren Alltag auf dem Bergbauernhof
-              erfahren, dann lies doch unseren{" "}
-              <StyledLink href="https://agrimiadi.substack.com" target="_blank">
-                {" "}
-                Blog
-              </StyledLink>{" "}
-              (agrimiadi.substack.com). An jedem zweiten Sonntag, wird ein neues
-              Kapitel veröffentlicht. Du kannst ihn auch als Newsletter
-              abonnieren. Die Autoren erlauben sich jedoch auch etwas kreative
-              Freiheit, deshalb nimm nicht alles für bare Münze.
             </p>
             {/* <div className="md:grid md:grid-cols-2">
                 <img

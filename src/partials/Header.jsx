@@ -124,6 +124,14 @@ function Header() {
                   PRODUKTE
                 </Link>
               </li>
+              <li className="">
+                <Link
+                  to="/#holidayhome"
+                  className="font-medium text-lg text-gray-600 hover:text-gray-900 px-2 py-3 flex items-center transition duration-150 ease-in-out"
+                >
+                  FERIENHAUS
+                </Link>
+              </li>
               <li>
                 <Link
                   to="/contact"

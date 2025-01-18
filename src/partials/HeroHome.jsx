@@ -5,7 +5,8 @@ import Goats from "../images/goats.jpeg";
 import Philosophy from "../images/philosophy.jpeg";
 import Chicken from "../images/chicken.jpeg";
 import Braggio from "../images/braggio.jpeg";
-
+import HolidayHome from "../images/holidayhome.jpeg";
+import FerienhausPdf from "./Ferienhaus.pdf";
 function StyledLink(props) {
   return <a className="underline" {...props} />;
 }
@@ -584,11 +585,62 @@ function HeroHome() {
         </div>
       </section>
 
-      <section id="story" className="relative">
+      <section id="holidayhome" className="relative">
         <div
           className="absolute bg-gray-100 inset-0 pointer-events-none mb-50"
           aria-hidden="true"
         ></div>
+        <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
+
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="pt-12 md:pt-20"></div>
+          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+            <h2 className="h2 mb-4 text-grey-800">FERIEN IN BRAGGIO</h2>
+            <p className="text-lg text-left text-gray-800">
+              Entspannen im Ferienhaus direkt neben unserem Hof. Bei
+              Wanderungen, Spaziergängen, oder beim Horchen der Stille ist der
+              stressige Alltag schnell vergessen. Braggio ist autofrei und nur
+              mit der Seilbahn zu erreichen. Das Ferienhaus ist einfach
+              eingerichtet und bietet Platz für max. 5 Personen. Auf dem Balkon
+              kann man eine wunderschöne Aussicht auf die Berglandschaft
+              geniessen. Wir freuen uns auf dich!
+              <div className="pt-8 flex justify-center">
+                <StyledLink
+                  href={FerienhausPdf}
+                  target="_blank"
+                  // download="Ferienhaus-Braggio.pdf"
+                >
+                  Preise und weitere Informationen
+                </StyledLink>
+              </div>
+              <br />
+            </p>
+            <div>
+              <div
+                className="relative flex justify-center mb-8"
+                data-aos="zoom-y-out"
+                data-aos-delay="450"
+              >
+                <div className="flex flex-col justify-center">
+                  <img
+                    className="mx-auto rounded"
+                    src={HolidayHome}
+                    width="600"
+                    alt="Ferienhaus"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="products" className="relative">
+        {/* Section background (needs .relative class on parent and next sibling elements) */}
+        <div
+          className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 pointer-events-none"
+          aria-hidden="true"
+        ></div>
+        {/* <div className="absolute left-0 right-0 bottom-0 m-auto w-px p-px h-20 bg-gray-200 transform translate-y-1/2"></div> */}
         <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
 
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
@@ -618,22 +670,6 @@ function HeroHome() {
               richtig. <br />
               <br />
             </p>
-            {/* <div className="md:grid md:grid-cols-2">
-                <img
-                  className="md:max-w-none mx-auto rounded"
-                  src={Chicken}
-                  width="380"
-                  // height="462"
-                  alt="Features bg"
-                />
-                <img
-                  className="md:max-w-none mx-auto rounded"
-                  src={Goats}
-                  width="380"
-                  // height="462"
-                  alt="Features bg"
-                />
-              </div> */}
           </div>
         </div>
       </section>

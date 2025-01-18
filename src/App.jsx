@@ -8,6 +8,7 @@ import AOS from "aos";
 
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
+import HolidayHome from "./pages/HolidayHome";
 
 function App() {
   const location = useLocation();
@@ -31,6 +32,7 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route path="/holidayhome" element={<HolidayHome />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </>

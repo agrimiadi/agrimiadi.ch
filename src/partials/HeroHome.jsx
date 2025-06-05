@@ -604,6 +604,11 @@ function HeroHome() {
               eingerichtet und bietet Platz für max. 5 Personen. Auf dem Balkon
               kann man eine wunderschöne Aussicht auf die Berglandschaft
               geniessen. Wir freuen uns auf dich!
+              <br />
+              <br />
+              Buchungsanfragen an{" "}
+              <a href="mailto:info@agrimiadi.ch">info@agrimiadi.ch</a> oder
+              telefonisch an +41 79 756 71 81 (Sarah)
               <div className="pt-8 flex justify-center">
                 <StyledLink
                   href={FerienhausPdf}

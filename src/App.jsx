@@ -3,12 +3,10 @@ import { Routes, Route, useLocation } from "react-router-dom";
 
 import "aos/dist/aos.css";
 import "./css/style.css";
-
-import AOS from "aos";
-
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
-import HolidayHome from "./pages/HolidayHome";
+
+import AOS from "aos";
 
 function App() {
   const location = useLocation();
@@ -32,7 +30,6 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/holidayhome" element={<HolidayHome />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </>

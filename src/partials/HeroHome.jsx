@@ -1,12 +1,27 @@
 import React from "react";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 
-import Family from "../images/family.jpeg";
+import Family from "../images/we.jpeg";
 import Goats from "../images/goats.jpeg";
 import Philosophy from "../images/philosophy.jpeg";
 import Chicken from "../images/chicken.jpeg";
-import Braggio from "../images/braggio.jpeg";
 import HolidayHome from "../images/holidayhome.jpeg";
+import CaImage0 from "../images/ca0.jpeg";
+import CaImage1 from "../images/ca1.jpeg";
+import CaImage2 from "../images/ca2.jpeg";
+import CaImage3 from "../images/ca3.jpeg";
+import CaImage4 from "../images/ca4.jpeg";
+import CaImage5 from "../images/ca5.jpeg";
+import CaImage6 from "../images/ca6.jpeg";
+import CaImage7 from "../images/ca7.jpeg";
+import CaImage8 from "../images/ca8.jpeg";
+import CaImage9 from "../images/ca9.jpeg";
+import CaImage10 from "../images/ca10.jpeg";
+import CaImage11 from "../images/ca11.jpeg";
+import CaImage12 from "../images/ca12.jpeg";
 import FerienhausPdf from "./Ferienhaus.pdf";
+
 function StyledLink(props) {
   return <a className="underline" {...props} />;
 }
@@ -58,7 +73,7 @@ function HeroHome() {
           {/* Hero content */}
           <div className="pt-32 pb-12 md:pt-40 md:pb-20">
             {/* Section header */}
-            <div className="text-center pb-12 md:pb-16">
+            <div className="text-center pb-5 md:pb-5">
               <h1
                 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
                 data-aos="zoom-y-out"
@@ -79,21 +94,28 @@ function HeroHome() {
             </div>
 
             {/* Hero image */}
-            <div>
-              <div
-                className="relative flex justify-center mb-8"
-                data-aos="zoom-y-out"
-                data-aos-delay="450"
-              >
-                <div className="flex flex-col justify-center">
-                  <img
-                    className="mx-auto rounded"
-                    src={Braggio}
-                    width="600"
-                    alt="Hero"
-                  />
-                </div>
-              </div>
+            <div className="max-w-3xl mx-auto">
+              <ImageGallery
+                items={[
+                  { original: CaImage0, thumbnail: CaImage0 },
+                  { original: CaImage1, thumbnail: CaImage1 },
+                  { original: CaImage2, thumbnail: CaImage2 },
+                  { original: CaImage3, thumbnail: CaImage3 },
+                  { original: CaImage4, thumbnail: CaImage4 },
+                  { original: CaImage5, thumbnail: CaImage5 },
+                  { original: CaImage6, thumbnail: CaImage6 },
+                  { original: CaImage7, thumbnail: CaImage7 },
+                  { original: CaImage8, thumbnail: CaImage8 },
+                  { original: CaImage9, thumbnail: CaImage9 },
+                  { original: CaImage10, thumbnail: CaImage10 },
+                  { original: CaImage11, thumbnail: CaImage11 },
+                  { original: CaImage12, thumbnail: CaImage12 },
+                ]}
+                showThumbnails={false}
+                showBullets
+                showPlayButton={false}
+                lazyLoad
+              />
             </div>
           </div>
         </div>
@@ -270,8 +292,7 @@ function HeroHome() {
                   Swiss-Express «Mond»{" "}
                 </StyledLink>
                 über Nacht versendet oder kann tiefgefroren abgeholt werden.
-                Falls Du Fragen hast, komm doch in usere <WhatsAppGroupLink />{" "}
-                oder ruf uns direkt an unter 079 756 71 81.
+                Falls Du Fragen hast ruf uns direkt an unter 079 756 71 81.
               </p>
             </div>
 
@@ -653,8 +674,7 @@ function HeroHome() {
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4 text-grey-800">SEI TEIL DES ABENTEUERS</h2>
             <p className="text-lg text-left text-gray-800">
-              Möchtest Du Teil des Abenteuers werden, dann komm in unsere{" "}
-              <WhatsAppGroupLink /> und folge uns auf{" "}
+              Möchtest Du Teil des Abenteuers werden, dann folge uns auf{" "}
               <StyledLink
                 href="https://www.instagram.com/agri.miadi"
                 target="_blank"

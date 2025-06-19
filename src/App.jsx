@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 
 import AOS from "aos";
+import { GoatSponsorship } from "./pages/GoatSponsorship";
 
 function App() {
   const location = useLocation();
@@ -30,6 +31,7 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route path="/sponsor-a-goat" element={<GoatSponsorship />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </>

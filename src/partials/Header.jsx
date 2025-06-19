@@ -42,8 +42,8 @@ function Header() {
 
   return (
     <header
-      className={`fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${
-        !top && "bg-white backdrop-blur-sm shadow-lg"
+      className={`fixed w-full z-30 bg-white md:bg-opacity-90 transition duration-300 ease-in-out ${
+        !top && "backdrop-blur-sm shadow-lg"
       }`}
     >
       <div className="max-w-6xl mx-auto px-3 sm:px-6">
@@ -92,7 +92,7 @@ function Header() {
                   HOF
                 </Link>
               </li>
-              <li className="hidden md:block">
+              {/* <li className="hidden md:block">
                 <Link
                   to="/#we"
                   className="font-medium text-lg text-gray-600 hover:text-gray-900 px-2 py-3 flex items-center transition duration-150 ease-in-out"
@@ -107,16 +107,16 @@ function Header() {
                 >
                   TIERE
                 </Link>
-              </li>
-              <li className="hidden md:block">
+              </li> */}
+              {/* <li className="hidden md:block">
                 <Link
                   to="/#philosophy"
                   className="font-medium text-lg text-gray-600 hover:text-gray-900 px-2 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   PHILOSOPHIE
                 </Link>
-              </li>
-              <li className="">
+              </li> */}
+              <li className="hidden md:block">
                 <Link
                   to="/#products"
                   className="font-medium text-lg text-gray-600 hover:text-gray-900 px-2 py-3 flex items-center transition duration-150 ease-in-out"
@@ -130,6 +130,14 @@ function Header() {
                   className="font-medium text-lg text-gray-600 hover:text-gray-900 px-2 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   FERIENHAUS
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/sponsor-a-goat"
+                  className="font-medium text-md md:text-lg text-gray-600 hover:text-gray-900 px-2 py-3 flex items-center transition duration-150 ease-in-out"
+                >
+                  PATENSCHAFT
                 </Link>
               </li>
               <li>

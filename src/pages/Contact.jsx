@@ -1,8 +1,6 @@
 import React from "react";
 import Instagram from "../images/instagram.png";
 import Facebook from "../images/facebook.png";
-import Whatsapp from "../images/whatsapp.png";
-import Substack from "../images/substack.png";
 
 import Header from "../partials/Header";
 
@@ -104,23 +102,6 @@ function Contact() {
                           className="h-8 w-auto"
                           src={Facebook}
                           alt="Facebook"
-                        />
-                      </a>
-                      <a
-                        href="https://chat.whatsapp.com/FG8ccsdBPtYCortlZ5mKAf"
-                        target="_blank"
-                      >
-                        <img
-                          className="h-8 w-auto"
-                          src={Whatsapp}
-                          alt="Whatsapp"
-                        />
-                      </a>
-                      <a href="https://agrimiadi.substack.com/" target="_blank">
-                        <img
-                          className="h-8 w-auto"
-                          src={Substack}
-                          alt="Substack"
                         />
                       </a>
                     </div>
